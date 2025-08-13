@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="bg">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GIT418 Final Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="javascript.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="hover">
+                        <a class="nav" href="#slides">Recommended</a>
+                    </li>
+                    <li class="hover">
+                        <a class="nav" href="#films">Available Movies</a>
+                    </li>
+                    <li class="hover">
+                        <a class="nav" href="#watchLater">Watch Later</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Blockbuster Video</h1>
+        <img src="images/Blockbuster_logo.svg.png" alt="" class="big">
+        <p class="blurb">Your neighborhood’s ultimate destination for movies, games, and unforgettable Friday nights. Since 1985, we’ve been connecting movie lovers with the biggest blockbusters, timeless classics, and hidden gems from every genre. Whether you’re here to browse our shelves, discover something new, or relive the magic of your favorite films, we’re ready to bring the big screen experience right into your living room.</p>
+        <section id="slides">
+            <h2>Consider one of these recent releases for your next movie night!</h2>
+            <div class="pannels cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="3000">
+                <img src="images/1.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </section>
+        <section id="films">
+            <h2>Take a look at just a few choices from our wide selection of films!</h2>
+            <div id="movies"></div>
+        </section>
+        <section id="watchLater">
+            <h2>Use our "Watch Later" list to keep track of which movies you plan to see!</h2>
+            <div>
+                <input type="text" id="enter"> 
+                <input type="button" id="addToList" value="Add">
+                <input type="button" id="clearList" value="Clear">
+            </div>
+            <ol></ol>
+        </section>
+        <footer>
+            <p>This website is in no way affiliated with Blockbuster Video. This project is purely for personal use.</p>
+            <p>Brand images were sourced from <a href="https://www.blockbuster.com/">www.blockbuster.com</a>.</p>
+            <p>Movie posters were sourced from <a href="https://www.themoviedb.org/">www.themoviedb.org</a>.</p>
+        </footer>
+    </body>
+</html>
